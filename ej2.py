@@ -10,7 +10,7 @@ class GestorAcademico:
         """Registra un alumno validando que no exista otro con el mismo DNI."""
         dni_nuevo = alumno.get_dni()
 
-        # Verificar si el DNI ya existe en la base de datos
+        #Verificar si el DNI ya existe en la base de datos
         for alumno_existente in self.__base_datos_alumnos:
             if alumno_existente.get_dni() == dni_nuevo:
                 print(f"ALERTA: El DNI {dni_nuevo} ya se encuentra registrado en el sistema.")
