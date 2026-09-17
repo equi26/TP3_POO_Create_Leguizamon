@@ -33,7 +33,7 @@ class Alumno(Persona):
         return (f"Alumno: {self.get_nombre()} {self.get_apellido()} | DNI: {self.get_dni()} "
                 f"| Curso: {self._curso} | Promedio: {self._promedio}")
 
-# --- Prueba del Ejercicio 1 ---
+#Prueba del Ejercicio 1 
 if __name__ == '__main__':
     alumno_prueba = Alumno("Juan", "Pérez", 45123456, "4° 3°", 8.5)
     print(alumno_prueba.obtener_informacion())
